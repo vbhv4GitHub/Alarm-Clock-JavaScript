@@ -43,12 +43,14 @@
     <!-- Form to take input from the user to set an Alarm. -->
     <form>
       <div class="my-3">
-        <label for="date">Choose a date for your alarm</label>
+        <label for="date">Date: </label>
         <input type="date" id="date">
+        <div id="dateHelp" class="form-text">* Please pick a date less than seven days from today.</div>
       </div>
       <div class="my-3">
-        <label for="time">Choose a time for your alarm</label>
+        <label for="time">Time: </label>
         <input type="time" id="aTime">
+        <div id="timeHelp" class="form-text">* Please choose a time in 12 hours format with AM or PM. Example: 12:00 AM.</div>
       </div>
       <button id="alarmTime" class="btn btn-sm btn-primary my-3">Set Alarm</button>
     </form>
